@@ -28,82 +28,222 @@ const provider = [
   {
     name: "spgb",
     subnav: ["All", "Slot", "Fishing", "EGame"],
-    game: [],
+    game: [
+      {
+        name: "Golden Fist",
+        img: "golden_fist",
+        cat: ["Slot"],
+        hot: true,
+        new: true,
+      },
+      {
+        name: "Love Idol",
+        img: "love_idol",
+        cat: ["Slot"],
+        hot: true,
+      },
+      {
+        name: "Muay Thai",
+        img: "muay_thai",
+        cat: ["Fishing"],
+        hot: false,
+      },
+    ],
   },
   {
     name: "lucky",
     subnav: ["All", "Slot", "Fishing", "EGame"],
-    game: [],
+    game: [
+      {
+        name: "Golden Fist",
+        img: "golden_fist",
+        cat: ["Slot"],
+        hot: true,
+        new: true,
+      },
+    ],
   },
   {
     name: "ppy",
     subnav: ["All", "Slot", "Fishing", "EGame"],
-    game: [],
+    game: [
+      {
+        name: "Golden Fist",
+        img: "golden_fist",
+        cat: ["Slot"],
+        hot: true,
+        new: true,
+      },
+    ],
   },
   {
     name: "jili",
     subnav: ["All", "Slot", "Fishing", "EGame"],
-    game: [],
+    game: [
+      {
+        name: "Golden Fist",
+        img: "golden_fist",
+        cat: ["Slot"],
+        hot: true,
+        new: true,
+      },
+    ],
   },
   {
     name: "ygr",
     subnav: ["All", "Slot", "Fishing", "EGame"],
-    game: [],
+    game: [
+      {
+        name: "Golden Fist",
+        img: "golden_fist",
+        cat: ["Slot"],
+        hot: true,
+        new: true,
+      },
+    ],
   },
   {
     name: "simple",
     subnav: ["All", "Slot", "Fishing", "EGame"],
-    game: [],
+    game: [
+      {
+        name: "Golden Fist",
+        img: "golden_fist",
+        cat: ["Slot"],
+        hot: true,
+        new: true,
+      },
+    ],
   },
   {
     name: "pussy",
     subnav: ["All", "Slot", "Fishing", "EGame"],
-    game: [],
+    game: [
+      {
+        name: "Golden Fist",
+        img: "golden_fist",
+        cat: ["Slot"],
+        hot: true,
+        new: true,
+      },
+    ],
   },
   {
     name: "next",
     subnav: ["All", "Slot", "Fishing", "EGame"],
-    game: [],
+    game: [
+      {
+        name: "Golden Fist",
+        img: "golden_fist",
+        cat: ["Slot"],
+        hot: true,
+        new: true,
+      },
+    ],
   },
   {
     name: "mk",
     subnav: ["All", "Slot", "Fishing", "EGame"],
-    game: [],
+    game: [
+      {
+        name: "Golden Fist",
+        img: "golden_fist",
+        cat: ["Slot"],
+        hot: true,
+        new: true,
+      },
+    ],
   },
   {
     name: "mega",
     subnav: ["All", "Slot", "Fishing", "EGame"],
-    game: [],
+    game: [
+      {
+        name: "Golden Fist",
+        img: "golden_fist",
+        cat: ["Slot"],
+        hot: true,
+        new: true,
+      },
+    ],
   },
   {
     name: "funta",
     subnav: ["All", "Slot", "Fishing", "EGame"],
-    game: [],
+    game: [
+      {
+        name: "Golden Fist",
+        img: "golden_fist",
+        cat: ["Slot"],
+        hot: true,
+        new: true,
+      },
+    ],
   },
   {
     name: "funky",
     subnav: ["All", "Slot", "Fishing", "EGame"],
-    game: [],
+    game: [
+      {
+        name: "Golden Fist",
+        img: "golden_fist",
+        cat: ["Slot"],
+        hot: true,
+        new: true,
+      },
+    ],
   },
   {
     name: "fachai",
     subnav: ["All", "Slot", "Fishing", "EGame"],
-    game: [],
+    game: [
+      {
+        name: "Golden Fist",
+        img: "golden_fist",
+        cat: ["Slot"],
+        hot: true,
+        new: true,
+      },
+    ],
   },
   {
     name: "cq9",
     subnav: ["All", "Slot", "Fishing", "EGame"],
-    game: [],
+    game: [
+      {
+        name: "Golden Fist",
+        img: "golden_fist",
+        cat: ["Slot"],
+        hot: true,
+        new: true,
+      },
+    ],
   },
   {
     name: "918",
     subnav: ["All", "Slot", "Fishing", "EGame"],
-    game: [],
+    game: [
+      {
+        name: "Golden Fist",
+        img: "golden_fist",
+        cat: ["Slot"],
+        hot: true,
+        new: true,
+      },
+    ],
   },
   {
     name: "888king",
     subnav: ["All", "Slot", "Fishing", "EGame"],
-    game: [],
+    game: [
+      {
+        name: "Golden Fist",
+        img: "golden_fist",
+        cat: ["Slot"],
+        hot: true,
+        new: true,
+      },
+    ],
   },
 ];
 
@@ -193,6 +333,8 @@ export default function SlotLobby() {
   //---------------------------------
 
   lobby_nav.appendTo("#slot_lobby");
-  current_subnav.appendTo("#slot_lobby");
-  current_lobby.appendTo("#slot_lobby");
+  let game_wrapper = $('<div class="lobby_wrapper col"></div>');
+  current_subnav.appendTo(game_wrapper);
+  current_lobby.appendTo(game_wrapper);
+  game_wrapper.appendTo("#slot_lobby");
 }
