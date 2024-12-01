@@ -15,237 +15,32 @@
     <div class="container col">
         <header class="row">
             <img onclick="window.location.href='index.html'" class="logo" src="Resources/Images/logo.png" alt="">
+
             <div class="right_menu row">
-                <div class="user_panel row">
-
-                    <div class="mybalance row">
-                        <div class="row balance">
-                            <div class="currency">SGD</div>
-                            <div>397,123.01</div>
-                        </div>
-                    </div>
-                    <div class="username row">
-                        <img class="avatar" src="Resources/Images/other/avatar.png" alt="">
-                        <span class="material-symbols-outlined">
-                            arrow_drop_down
-                        </span>
-                    </div>
-                    <div class="user_menu col">
-                        <div class="mybalance col">
-                            <div class="row balance">
-                                <div class="currency">SGD</div>
-                                <div class="number">397,123.01</div>
-                            </div>
-                            <div class="row balance">
-                                <img class="currency" src="Resources/Images/icon/w_coin.png" alt="">
-                                <div class="gradient_text number">397,123</div>
-                            </div>
-                        </div>
-                        <hr>
-                        <a href="deposit.html">Deposit</a>
-                        <a href="withdrawal.html">Withdrawal</a>
-                        <a href="transfer.html">Transfer | Promo</a>
-                        <a href="account.html">My Profile</a>
-                        <a href="history.html">History</a>
-                        <a href="referral.html">Referral</a>
-                        <a href="rewards.html">Reward Center</a>
-                        <a href="index.html">Log out</a>
-                    </div>
-
+                <div class="custom_tab button_2 row" show-modal="auth_modal" data-show="login_form"
+                    data-hide="auth_form">
+                    <img src="Resources/Images/icon/login.svg" alt="">
+                    <span>SIGN IN</span>
+                </div>
+                <div class="custom_tab button button_1 row" show-modal="auth_modal" data-show="register_form"
+                    data-hide="auth_form">
+                    <img src="Resources/Images/icon/register.svg" alt="">
+                    <span>REGISTER</span>
                 </div>
             </div>
-
             <img src="Resources/Images/icon/menu.svg" alt="" class="menu_btn">
 
         </header>
         <main>
             <section class="main_section col">
                 <div class="section_title row">
-                    <img src="Resources/Images/icon/section_icon/hot.svg" alt="">
-                    <strong>Account</strong>
+                    <img src="Resources/Images/icon/section_icon/default.png" alt="">
+                    <strong>Affiliate</strong>
                 </div>
-                <section class="fund col">
-                    <div class="fund_menu col">
-                        <div class="userinfo col">
-                            <div class="row">
-                                <img class="badge" src="Resources/Images/vip/classic.png" alt="">
 
-                                <div class="col">
-                                    <strong>Alex</strong>
-                                    <span class="rank">Rank - <span class="gradient_text">Gold</span></span>
-                                </div>
-                            </div>
-                            <div class="mybalance row">
-                                <div class="row balance">
-                                    <div class="currency">SGD</div>
-                                    <div>397,123.00</div>
-                                </div>
-                                <div class="row balance">
-                                    <img class="currency" src="Resources/Images/icon/w_coin.png" alt="">
-                                    <div class="gradient_text">397,123</div>
-                                </div>
-                                <span class="material-symbols-outlined refresh_btn">
-                                    refresh
-                                </span>
-                            </div>
-                        </div>
-                        <div class="current_page row">
-                            <img src="Resources/Images/icon/rewards.svg" alt="">
-                            <span>Rewards</span>
-                            <span class="material-symbols-outlined icon">
-                                arrow_drop_down
-                            </span>
-                        </div>
-                        <div class="menu col">
-                            <a href="deposit.html" class="menu_item row">
-                                <img src="Resources/Images/icon/financial.svg" alt="">
-                                <span>Financial</span>
-                            </a>
-                            <a href="account.html" class="menu_item row">
-                                <img src="Resources/Images/icon/account.svg" alt="">
-                                <span>Account Settings</span>
-                            </a>
-                            <a href="rewards.html" class="menu_item row">
-                                <img src="Resources/Images/icon/rewards.svg" alt="">
-                                <span>Rewards</span>
-                            </a>
-                            <a href="contact.html" class="menu_item row">
-                                <img src="Resources/Images/icon/others.svg" alt="">
-                                <span>Others</span>
-                            </a>
-                            <a href="index.html" class="menu_item row">
-                                <img src="Resources/Images/icon/logout.svg" alt="">
-                                <span>Logout</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="fund_section  col">
-                        <div class="section_topnav row">
-                            <a href="rewards.html" class="custom_tab active_tab">Rewards Center</a>
-                            <a href="rewards_tnc.html" class="custom_tab ">Terms & Conditions</a>
-                        </div>
-                        <div class="fund_form col">
-                            <div class="input col">
-                                <div class="label">Reward Types:</div>
-                                <div class="custom_radios row">
-                                    <div class="radio_content custom_tab tab_active row" data-show="reward_item"
-                                        data-hide="reward_item">
-                                        <span>All</span>
-                                    </div>
-                                    <div class="radio_content custom_tab row" data-show="leading_gadgets"
-                                        data-hide="reward_item">
-                                        <span>LEADING GADGETS</span>
-                                    </div>
-                                    <div class="radio_content custom_tab row" data-show="free_bets"
-                                        data-hide="reward_item">
-                                        <span>FREE BETS</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="reward_listing">
-
-                                <div class="reward_item col">
-                                    <img src="Resources/Images/rewards/rolext.png" alt="">
-                                    <span class="name">Rolex GMT Pepsi</span>
-                                    <span class="pts ">
-                                        35,000 points
-                                    </span>
-
-                                    <div class="col btns">
-                                        <div class="button_2">DETAILS</div>
-                                        <div class="button_1">REDEEM</div>
-                                    </div>
-                                </div>
-                                <div class="reward_item leading_gadgets col">
-                                    <img src="Resources/Images/rewards/rolext.png" alt="">
-                                    <span class="name">Rolex GMT Pepsi</span>
-                                    <span class="pts ">
-                                        35,000 points
-                                    </span>
-
-                                    <div class="col btns">
-                                        <div class="button_2">DETAILS</div>
-                                        <div class="button_1">REDEEM</div>
-                                    </div>
-                                </div>
-                                <div class="reward_item leading_gadgets col">
-                                    <img src="Resources/Images/rewards/rolext.png" alt="">
-                                    <span class="name">Rolex GMT Pepsi</span>
-                                    <span class="pts ">
-                                        35,000 points
-                                    </span>
-
-                                    <div class="col btns">
-                                        <div class="button_2">DETAILS</div>
-                                        <div class="button_1">REDEEM</div>
-                                    </div>
-                                </div>
-                                <div class="reward_item free_bets col">
-                                    <img src="Resources/Images/rewards/rolext.png" alt="">
-                                    <span class="name">Rolex GMT Pepsi</span>
-                                    <span class="pts ">
-                                        35,000 points
-                                    </span>
-
-                                    <div class="col btns">
-                                        <div class="button_2">DETAILS</div>
-                                        <div class="button_1">REDEEM</div>
-                                    </div>
-                                </div>
-                                <div class="reward_item free_bets col">
-                                    <img src="Resources/Images/rewards/rolext.png" alt="">
-                                    <span class="name">Rolex GMT Pepsi</span>
-                                    <span class="pts ">
-                                        35,000 points
-                                    </span>
-
-                                    <div class="col btns">
-                                        <div class="button_2">DETAILS</div>
-                                        <div class="button_1">REDEEM</div>
-                                    </div>
-                                </div>
-                                <div class="reward_item leading_gadgets col">
-                                    <img src="Resources/Images/rewards/rolext.png" alt="">
-                                    <span class="name">Rolex GMT Pepsi</span>
-                                    <span class="pts ">
-                                        35,000 points
-                                    </span>
-
-                                    <div class="col btns">
-                                        <div class="button_2">DETAILS</div>
-                                        <div class="button_1">REDEEM</div>
-                                    </div>
-                                </div>
-                                <div class="reward_item col">
-                                    <img src="Resources/Images/rewards/rolext.png" alt="">
-                                    <span class="name">Rolex GMT Pepsi</span>
-                                    <span class="pts ">
-                                        35,000 points
-                                    </span>
-
-                                    <div class="col btns">
-                                        <div class="button_2">DETAILS</div>
-                                        <div class="button_1">REDEEM</div>
-                                    </div>
-                                </div>
-                                <div class="reward_item col">
-                                    <img src="Resources/Images/rewards/rolext.png" alt="">
-                                    <span class="name">Rolex GMT Pepsi</span>
-                                    <span class="pts ">
-                                        35,000 points
-                                    </span>
-
-                                    <div class="col btns">
-                                        <div class="button_2">DETAILS</div>
-                                        <div class="button_1">REDEEM</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
+                <div class="about_content col">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
             </section>
         </main>
         <div class="footer col">
@@ -334,7 +129,7 @@
                     close
                 </span>
             </div>
-            <a href="index.html" class="nav_item nav_active row">
+            <a href="index.html" class="nav_item  row">
                 <span>Home</span>
             </a>
             <a href="promo.html" class="nav_item row">
@@ -397,7 +192,7 @@
         </aside>
     </div>
     <div class="mainnav row">
-        <a href="index.html" class="nav_item nav_active col">
+        <a href="index.html" class="nav_item col">
             <img src="Resources/Images/icon/mob_nav/home.svg" alt="" class="icon">
             <span>Home</span>
         </a>
@@ -418,6 +213,7 @@
             <span>Help</span>
         </a>
     </div>
+
 
     <div class="modal auth_modal">
         <div class="modal_content col">

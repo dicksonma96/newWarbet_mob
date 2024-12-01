@@ -27,6 +27,15 @@ export default function showToggle() {
     $(".sidenav").removeClass("sidenav_active");
   });
 
+  $(document).click(function () {
+    $(".fund_menu").removeClass("menu_active");
+  });
+
+  $(".current_page").click(function (e) {
+    e.stopPropagation();
+    $(".fund_menu").toggleClass("menu_active");
+  });
+
   $(".custom_tab").click(function () {
     let displayType = $(this).attr("data-showType") || "flex";
     let showItem = $(this).attr("data-show");
